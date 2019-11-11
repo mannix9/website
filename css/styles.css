@@ -1,0 +1,156 @@
+body{
+    color: red;
+    background-color: aqua;
+}
+
+#dracula{
+    color: red;
+    font-size: 70px;
+    font-family: 'McLaren', cursive;
+    animation-name: dracula;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+#draculaPic{
+    animation-name: animeDracula;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    left: 45%;
+    position: relative;
+
+}
+@keyframes animeDracula{
+    0%{
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+        transform: rotateZ(100deg);
+    
+    }50%{
+        transform: rotateX(50deg);
+        transform: rotateY(50deg);
+        transform: rotateZ(50deg);
+
+    }100%{
+        transform: rotateX(30deg);
+        transform: rotateY(200deg);
+        transform: rotateZ(150deg);
+    }
+}
+
+@keyframes dracula{
+    0%{
+        background-color: burlywood;
+        box-shadow: chocolate;
+    }50%{
+        background-color: darkblue;
+    }100%{
+        background-color: darkorange;
+    }
+}
+
+/* font-family: 'McLaren', cursive; */
+
+/* font-family: 'Yeon Sung', cursive; */
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: blue;
+    text-align: center;
+    font-size: 60px;
+}
+#myButton1{
+    display:block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size-adjust: 1.7rem;
+    border-radius: 4px;
+    color: darkslategrey;
+    background-color: #009933;
+    border: none;
+    animation-name: myButton1;
+    animation-duration: 5s;
+}
+
+#myButton1:hover{
+    border-radius: 50%;
+}
+
+@keyframes button1{
+    0%{
+        background-color: blueviolet;
+        box-shadow: 6px 6px 0 blue;
+    }50%{
+        background-color: rgb(150, 13, 13);
+        box-shadow: 6px 6px darkviolet;
+
+    }100%{
+        background-color: dimgrey;
+        box-shadow: 6px 6px 0 deeppink;
+    }
+}
+
+#myButton2{
+
+    color: crimson;
+    background-color: darkblue;
+    animation-name: myButton2;
+    animation-duration: 6s;
+    font-size: 40px;
+    left: 40%;
+    position: relative;
+}
+
+#myButton2:hover{
+    border-radius: 50%;
+}
+@keyframes button2{
+    0%{
+        background-color: blueviolet;
+        box-shadow: 6px 6px 0 blue;
+    }50%{
+        background-color: rgb(150, 13, 13);
+        box-shadow: 6px 6px darkviolet;
+
+    }100%{
+        background-color: dimgrey;
+        box-shadow: 6px 6px 0 deeppink;
+    }
+}
+
+
+#myDoc{
+    position: absolute;
+    animation-name: drFrank;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 250px;
+    height: 200px;
+    left: 50%;
+    position: relative;
+}
+
+@keyframes drFrank{
+    0%{
+        transform: rotateX(20deg);
+        transform: rotateY(40deg);
+        transform: rotateZ(100deg);
+
+    }50%{
+        transform: rotateX(150deg);
+        transform: rotateY(40deg);
+        transform: rotateZ(100deg);
+
+    }100%{
+        transform: rotateX(50deg);
+        transform: rotateY(200deg);
+        transform: rotateZ(150deg);
+    }
+}
+
+
